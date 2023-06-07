@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #1E1E1E;
+  background-color: #F5EAE3;
+  font-size: 1.1rem;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  background-color: #FBF7F4;
+  color: #454411;
+  padding: 1.2rem 2rem;
+  border: 0.1rem solid #454411;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.logo {
+  display: grid;
+  grid-template-rows: auto;
+  font-family: 'Nanum Myeongjo', serif;
+  color: #454411;
+}
+
+#logo-img {
+  height: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+#slogan-img {
+  height: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+
+/*--------------------left section in main--------------------*/
+
+.section-left,
+.section-right {
+  flex: 1;
+  padding: 1.2rem 2rem;
+}
+
+.content {
+  padding: 1.2rem 2rem;
+  margin-top: 1.2rem;
+  border: 0.1rem solid #454411;
+  border-radius: 1rem;
+  background-color: #FBF7F4;
+  display: none;
+  padding-top: 1.2rem;
+}
+
+.content.show {
+  display: block;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1.2rem 2rem;
+  margin-top: 1.2rem;
+  border: 0.1rem solid #454411;
+  border-radius: 1rem;
+  background-color: #E5E5DD;
+}
+
+#arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 0.1rem solid #454411;
+  border-bottom: 0.1rem solid #454411;
+  transition: transform 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+#p-1,
+#p-2 {
+  margin-bottom: 1.2rem;
+}
+
+#arrow.up {
+  transform: rotate(135deg);
+}
+
+/*--------------------right section in main--------------------*/
+
+.section-right {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto;
+  place-items: center;
+  border: 0.1rem solid #454411;
+  border-radius: 1rem;
+  background-color: #E5E5DD;
+  margin: auto 2rem;
+}
+
+.other-section-heading {
+  font-size: 1.5rem;
+}
+
+#qr {
+  height: 10rem;
+  justify-self: center;
+  border: 0.1rem solid #454411;
+  border-radius: 1rem;
+  margin: 1.2rem;
+}
+
+#download-link {
+  color: #1E1E1E;
+  margin-bottom: 1.2rem;
+  text-decoration: none;
+  text-decoration: underline;
+  transition: 0.2s;
+  font-size: 1.5rem;
+}
+
+#instructions {
+  padding: 1.2rem 2rem;
+  margin-bottom: 1.2rem;
+  border: 0.1rem solid #454411;
+  border-radius: 1rem;
+  background-color: #FBF7F4;
+}
+
+/*--------------------footer--------------------*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  color: #454411;
+  background-color: #FBF7F4;
+  padding: 1.2rem 2rem;
+  width: 100%;
+  border: 0.1rem solid #454411;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#mail-link, #insta-link {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #454411;
+  transition: 0.2s;
+}
+
+#download-link:hover,
+#mail-link:hover,
+#insta-link:hover {
+  color: #006680;
+}
+
+/*--------------------responsive--------------------*/
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 1rem;
+  }
+
+  #logo-img {
+    height: 2.2rem;
+    margin: 0.5rem;
+  }
+  
+  #slogan-img {
+    height: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .topptekst {
+    display: none;
+  }
+
+  header {
+    padding: 1rem;
+  }
+  
+  .section-heading {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .other-section-heading {
+    font-size: 1.2rem;
+  }
+
+  .section-left {
+    margin-top: 5rem;
+  }
+
+  .section-right {
+    margin-bottom: 5rem;
+  }
+
+  #arrow {
+    width: 15px;
+    height: 15px;
+  }
+  
+  #qr {
+    height: 8rem;
+    margin: 1rem;
+  }
+  
+  #download-link,
+  #mail-link,
+  #insta-link {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    padding: 1rem;
+    font-size: 1.2rem;
+    bottom: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    height: auto;
+  }
+}
